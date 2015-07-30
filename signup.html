@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Sf-web2leads by walvekarnikhil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Sf-web2leads</h1>
+      <h2 class="project-tagline">Are you interested to know about near by deals?</h2>
+    </section>
+
+    <section class="main-content">
+      <div>
+          <form class="form-horizontal" xmlns="http://www.w3.org/1999/xhtml" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+            <input name="oid" type="hidden" value="00D37000000PoDE" />
+            <input name="retURL" type="hidden" value="http://walvekarnikhil.github.io/SF-Web2Leads/thankyou.html" />
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="first_name">First Name</label>
+              <div class="col-sm-10">
+                <input id="first_name" class="form-control" maxlength="40" name="first_name" size="20" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="last_name">Last Name</label>
+              <div class="col-sm-10">
+                <input id="last_name" class="form-control" maxlength="80" name="last_name" size="20" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="email">Email</label>
+              <div class="col-sm-10">
+                <input id="email" class="form-control" maxlength="80" name="email" size="20" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="company">Company</label>
+              <div class="col-sm-10">
+                <input id="company" class="form-control" maxlength="40" name="company" size="20" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="city">City</label>
+              <div class="col-sm-10">
+                <input id="city" class="form-control" maxlength="40" name="city" size="20" type="text" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="state">State/Province</label>
+              <div class="col-sm-10">
+                <input id="state" class="form-control" maxlength="20" name="state" size="20" type="text
+                " />
+              </div>
+            </div>
+
+            <button name="submit" class="btn btn-success" type="submit">Update me</button>
+
+            </form>
+        </div>
+
+    </section>
+
+  
+  </body>
+</html>
