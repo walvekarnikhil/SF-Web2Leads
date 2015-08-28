@@ -10,7 +10,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <!-- Bootstrap core CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   </head>
   <body>
     <script>
@@ -22,9 +21,21 @@
   ga('create', 'UA-39988348-4', 'auto');
   ga('send', 'pageview');
 
-$(document).ready(function(){
-  console.log(document.cookie);
-  $('#analyticsId').val(document.cookie);
+function getCookie(cname) {
+    var name = cname + "=";
+    var cookies = document.cookie.split(';');
+    for(var i=0; i<cookies.length; i++) {
+        var ck = cookies[i];
+        while (ck.charAt(0)==' ') ck = ck.substring(1);
+        if (ck.indexOf(name) == 0) return ck.substring(name.length,ck.length);
+    }
+    return "";
+}
+
+window.addEventListner('onload', function(event) {
+  document.getElementById('analyticsId').value = getCookie('_ga');
+  document.getElementById('oid').value = '00D37000000PoDE';
+  document.getElementById('retURL').value = 'http://walvekarnikhil.github.io/SF-Web2Leads/thankyou.html';
 });
 </script>
     <section class="page-header">
